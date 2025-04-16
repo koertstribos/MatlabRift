@@ -20,4 +20,7 @@ flipTimes = zeros(frames);
 for i = 1:frames
     qobj.Draw(i);
     flipTimes(i) = Screen('Flip', windowPointer);
+    KbPressWait;
+    
+    
 end
